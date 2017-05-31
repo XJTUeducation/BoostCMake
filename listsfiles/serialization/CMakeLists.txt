@@ -45,6 +45,7 @@ add_library(boost_serialization
 target_link_libraries(boost_serialization boost_smart_ptr )
 target_compile_definitions( boost_serialization  PUBLIC ${BOOST_DEF} )
 install(TARGETS boost_serialization DESTINATION ${INSTALL_LIB_DIRS} ) 
+set_target_properties(boost_serialization PROPERTIES FOLDER "boost/libs")
 
 add_library(boost_wserialization
   ${DIR_SRC}/src/basic_text_wiprimitive.cpp
@@ -62,6 +63,7 @@ add_library(boost_wserialization
 target_link_libraries(boost_wserialization boost_serialization )
 target_compile_definitions( boost_wserialization  PUBLIC ${BOOST_DEF} )
 install(TARGETS boost_wserialization DESTINATION ${INSTALL_LIB_DIRS} ) 
+set_target_properties(boost_wserialization PROPERTIES FOLDER "boost/libs")
   
 if(${RUN_BOOST_TEST})
 	set(tests_list
