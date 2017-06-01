@@ -239,21 +239,21 @@ endif()
 set_property(TARGET boost_unit_test_framework APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_unit_test_framework PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_unit_test_frameworkd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_unit_test_frameworkd.lib"
   )
 
 # Import target "boost_system" for configuration "Debug"
 set_property(TARGET boost_system APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_system PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_systemd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_systemd.lib"
   )
 
 # Import target "boost_date_time" for configuration "Debug"
 set_property(TARGET boost_date_time APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_date_time PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_date_timed.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_date_timed.lib"
   )
 
 # Import target "boost_thread" for configuration "Debug"
@@ -261,14 +261,14 @@ set_property(TARGET boost_thread APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_thread PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_date_time"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_threadd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_threadd.lib"
   )
 
 # Import target "boost_atomic" for configuration "Debug"
 set_property(TARGET boost_atomic APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_atomic PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_atomicd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_atomicd.lib"
   )
 
 # Import target "boost_chrono" for configuration "Debug"
@@ -276,63 +276,63 @@ set_property(TARGET boost_chrono APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_chrono PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_exception;boost_system"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_chronod.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_chronod.lib"
   )
 
 # Import target "boost_exception" for configuration "Debug"
 set_property(TARGET boost_exception APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_exception PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_exceptiond.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_exceptiond.lib"
   )
 
 # Import target "boost_container" for configuration "Debug"
 set_property(TARGET boost_container APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_container PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_containerd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_containerd.lib"
   )
 
 # Import target "math_c99" for configuration "Debug"
 set_property(TARGET math_c99 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(math_c99 PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_math_c99d.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_math_c99d.lib"
   )
 
 # Import target "math_c99f" for configuration "Debug"
 set_property(TARGET math_c99f APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(math_c99f PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_math_c99fd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_math_c99fd.lib"
   )
 
 # Import target "math_c99l" for configuration "Debug"
 set_property(TARGET math_c99l APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(math_c99l PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_math_c99ld.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_math_c99ld.lib"
   )
 
 # Import target "math_tr1" for configuration "Debug"
 set_property(TARGET math_tr1 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(math_tr1 PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_math_tr1d.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_math_tr1d.lib"
   )
 
 # Import target "math_tr1f" for configuration "Debug"
 set_property(TARGET math_tr1f APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(math_tr1f PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_math_tr1fd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_math_tr1fd.lib"
   )
 
 # Import target "math_tr1l" for configuration "Debug"
 set_property(TARGET math_tr1l APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(math_tr1l PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_math_tr1ld.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_math_tr1ld.lib"
   )
 
 # Import target "boost_filesystem" for configuration "Debug"
@@ -340,7 +340,7 @@ set_property(TARGET boost_filesystem APPEND PROPERTY IMPORTED_CONFIGURATIONS DEB
 set_target_properties(boost_filesystem PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_system"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_filesystemd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_filesystemd.lib"
   )
 
 # Import target "boost_random" for configuration "Debug"
@@ -348,14 +348,14 @@ set_property(TARGET boost_random APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_random PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_system"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_randomd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_randomd.lib"
   )
 
 # Import target "boost_regex" for configuration "Debug"
 set_property(TARGET boost_regex APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_regex PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_regexd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_regexd.lib"
   )
 
 # Import target "boost_timer" for configuration "Debug"
@@ -363,14 +363,14 @@ set_property(TARGET boost_timer APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_timer PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_chrono"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_timerd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_timerd.lib"
   )
 
 # Import target "boost_serialization" for configuration "Debug"
 set_property(TARGET boost_serialization APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_serialization PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_serializationd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_serializationd.lib"
   )
 
 # Import target "boost_wserialization" for configuration "Debug"
@@ -378,7 +378,7 @@ set_property(TARGET boost_wserialization APPEND PROPERTY IMPORTED_CONFIGURATIONS
 set_target_properties(boost_wserialization PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_serialization"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_wserializationd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_wserializationd.lib"
   )
 
 # Import target "boost_graph" for configuration "Debug"
@@ -386,14 +386,14 @@ set_property(TARGET boost_graph APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_graph PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_regex"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_graphd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_graphd.lib"
   )
 
 # Import target "boost_iostreams" for configuration "Debug"
 set_property(TARGET boost_iostreams APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_iostreams PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_iostreamsd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_iostreamsd.lib"
   )
 
 # Import target "boost_locale" for configuration "Debug"
@@ -401,21 +401,21 @@ set_property(TARGET boost_locale APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_locale PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_system"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_localed.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_localed.lib"
   )
 
 # Import target "boost_program_options" for configuration "Debug"
 set_property(TARGET boost_program_options APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_program_options PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_program_optionsd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_program_optionsd.lib"
   )
 
 # Import target "boost_signals" for configuration "Debug"
 set_property(TARGET boost_signals APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_signals PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_signalsd.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_signalsd.lib"
   )
 
 # Import target "boost_type_erasure" for configuration "Debug"
@@ -423,7 +423,7 @@ set_property(TARGET boost_type_erasure APPEND PROPERTY IMPORTED_CONFIGURATIONS D
 set_target_properties(boost_type_erasure PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_thread;boost_system"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_type_erasured.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_type_erasured.lib"
   )
 
 # Import target "boost_wave" for configuration "Debug"
@@ -431,7 +431,7 @@ set_property(TARGET boost_wave APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(boost_wave PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_filesystem;boost_thread;boost_date_time"
-  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_waved.lib"
+  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_waved.lib"
   )
 
 if( PythonLibs_FOUND )
@@ -440,7 +440,7 @@ if( PythonLibs_FOUND )
 	set_target_properties(boost_python PROPERTIES
 	  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
 	  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost::serialization;boost::graph;${PYTHON_LIBRARIES}"
-	  IMPORTED_LOCATION_DEBUG "${boost_LIBRARY_DIRS}/boost_pythond.lib"
+	  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_pythond.lib"
 	  )
 endif()
  
@@ -448,21 +448,21 @@ endif()
 set_property(TARGET boost_unit_test_framework APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_unit_test_framework PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_unit_test_framework.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_unit_test_framework.lib"
   )
 
 # Import target "boost_system" for configuration "Release"
 set_property(TARGET boost_system APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_system PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_system.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_system.lib"
   )
 
 # Import target "boost_date_time" for configuration "Release"
 set_property(TARGET boost_date_time APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_date_time PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_date_time.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_date_time.lib"
   )
 
 # Import target "boost_thread" for configuration "Release"
@@ -470,14 +470,14 @@ set_property(TARGET boost_thread APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE
 set_target_properties(boost_thread PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_date_time"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_thread.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_thread.lib"
   )
 
 # Import target "boost_atomic" for configuration "Release"
 set_property(TARGET boost_atomic APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_atomic PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_atomic.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_atomic.lib"
   )
 
 # Import target "boost_chrono" for configuration "Release"
@@ -485,63 +485,63 @@ set_property(TARGET boost_chrono APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE
 set_target_properties(boost_chrono PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_exception;boost_system"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_chrono.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_chrono.lib"
   )
 
 # Import target "boost_exception" for configuration "Release"
 set_property(TARGET boost_exception APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_exception PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_exception.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_exception.lib"
   )
 
 # Import target "boost_container" for configuration "Release"
 set_property(TARGET boost_container APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_container PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C;CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_container.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_container.lib"
   )
 
 # Import target "math_c99" for configuration "Release"
 set_property(TARGET math_c99 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(math_c99 PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_math_c99.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_math_c99.lib"
   )
 
 # Import target "math_c99f" for configuration "Release"
 set_property(TARGET math_c99f APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(math_c99f PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_math_c99f.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_math_c99f.lib"
   )
 
 # Import target "math_c99l" for configuration "Release"
 set_property(TARGET math_c99l APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(math_c99l PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_math_c99l.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_math_c99l.lib"
   )
 
 # Import target "math_tr1" for configuration "Release"
 set_property(TARGET math_tr1 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(math_tr1 PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_math_tr1.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_math_tr1.lib"
   )
 
 # Import target "math_tr1f" for configuration "Release"
 set_property(TARGET math_tr1f APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(math_tr1f PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_math_tr1f.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_math_tr1f.lib"
   )
 
 # Import target "math_tr1l" for configuration "Release"
 set_property(TARGET math_tr1l APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(math_tr1l PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_math_tr1l.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_math_tr1l.lib"
   )
 
 # Import target "boost_filesystem" for configuration "Release"
@@ -549,7 +549,7 @@ set_property(TARGET boost_filesystem APPEND PROPERTY IMPORTED_CONFIGURATIONS REL
 set_target_properties(boost_filesystem PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_system"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_filesystem.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_filesystem.lib"
   )
 
 # Import target "boost_random" for configuration "Release"
@@ -557,14 +557,14 @@ set_property(TARGET boost_random APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE
 set_target_properties(boost_random PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_system"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_random.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_random.lib"
   )
 
 # Import target "boost_regex" for configuration "Release"
 set_property(TARGET boost_regex APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_regex PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_regex.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_regex.lib"
   )
 
 # Import target "boost_timer" for configuration "Release"
@@ -572,14 +572,14 @@ set_property(TARGET boost_timer APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_timer PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_chrono"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_timer.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_timer.lib"
   )
 
 # Import target "boost_serialization" for configuration "Release"
 set_property(TARGET boost_serialization APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_serialization PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_serialization.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_serialization.lib"
   )
 
 # Import target "boost_wserialization" for configuration "Release"
@@ -587,7 +587,7 @@ set_property(TARGET boost_wserialization APPEND PROPERTY IMPORTED_CONFIGURATIONS
 set_target_properties(boost_wserialization PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_serialization"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_wserialization.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_wserialization.lib"
   )
 
 # Import target "boost_graph" for configuration "Release"
@@ -595,14 +595,14 @@ set_property(TARGET boost_graph APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_graph PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_regex"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_graph.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_graph.lib"
   )
 
 # Import target "boost_iostreams" for configuration "Release"
 set_property(TARGET boost_iostreams APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_iostreams PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_iostreams.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_iostreams.lib"
   )
 
 # Import target "boost_locale" for configuration "Release"
@@ -610,21 +610,21 @@ set_property(TARGET boost_locale APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE
 set_target_properties(boost_locale PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_system"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_locale.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_locale.lib"
   )
 
 # Import target "boost_program_options" for configuration "Release"
 set_property(TARGET boost_program_options APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_program_options PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_program_options.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_program_options.lib"
   )
 
 # Import target "boost_signals" for configuration "Release"
 set_property(TARGET boost_signals APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_signals PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_signals.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_signals.lib"
   )
 
 # Import target "boost_type_erasure" for configuration "Release"
@@ -632,7 +632,7 @@ set_property(TARGET boost_type_erasure APPEND PROPERTY IMPORTED_CONFIGURATIONS R
 set_target_properties(boost_type_erasure PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_thread;boost_system"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_type_erasure.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_type_erasure.lib"
   )
 
 # Import target "boost_wave" for configuration "Release"
@@ -640,7 +640,7 @@ set_property(TARGET boost_wave APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(boost_wave PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_filesystem;boost_thread;boost_date_time"
-  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_wave.lib"
+  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_wave.lib"
   )
 
 if( PythonLibs_FOUND )
@@ -649,7 +649,7 @@ if( PythonLibs_FOUND )
 	set_target_properties(boost_python PROPERTIES
 	  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
 	  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost::serialization;boost::graph;${PYTHON_LIBRARIES}"
-	  IMPORTED_LOCATION_RELEASE "${boost_LIBRARY_DIRS}/boost_python.lib"
+	  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_python.lib"
 	  )
 endif()
 
