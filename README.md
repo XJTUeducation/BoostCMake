@@ -7,6 +7,7 @@ CMake script to build http://www.boost.org/ inspired by https://github.com/boost
 ### Windows Install
 
 - Download boost_1_64_0 https://dl.bintray.com/boostorg/release/1.64.0/source/
+- unzip boost_1_64_0 in the root directory of repository.
 - Edit `generate_binaries_vc10.bat` file for your IDE for my configuration I use visual studio 2010.
 
 
