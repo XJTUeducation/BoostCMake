@@ -19,7 +19,7 @@ add_library(boost_thread
 	)
 endif(WIN32)
 target_link_libraries(boost_thread boost_date_time)
-target_compile_definitions( boost_thread PUBLIC ${BOOST_DEF} )
+target_compile_definitions( boost_thread PUBLIC ${BOOST_DEF} BOOST_THREAD_BUILD_LIB )
 install(TARGETS boost_thread DESTINATION ${INSTALL_LIB_DIRS} ) 
 set_target_properties(boost_thread PROPERTIES FOLDER "boost/libs")
 

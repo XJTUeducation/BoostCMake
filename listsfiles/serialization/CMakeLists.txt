@@ -42,7 +42,6 @@ add_library(boost_serialization
   ${DIR_SRC}/src/xml_archive_exception.cpp
   )
 
-target_link_libraries(boost_serialization boost_smart_ptr )
 target_compile_definitions( boost_serialization  PUBLIC ${BOOST_DEF} )
 install(TARGETS boost_serialization DESTINATION ${INSTALL_LIB_DIRS} ) 
 set_target_properties(boost_serialization PROPERTIES FOLDER "boost/libs")
