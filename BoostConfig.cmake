@@ -53,5 +53,5 @@ if( PythonLibs_FOUND )
 	find_path(PYTHON_NUMPY_INCLUDE_DIR numpy/arrayobject.h HINTS "${__numpy_path}" "${PYTHON_INCLUDE_PATH}" NO_DEFAULT_PATH)
 endif()
  
-include(${Boost_CONFIG_PATH}/boostTargets.cmake)
+include(${Boost_CONFIG_PATH}/BoostTargets.cmake)
 message(STATUS "boost Found in ${boost_LIBRARY_DIRS}")

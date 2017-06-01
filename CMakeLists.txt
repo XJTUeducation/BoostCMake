@@ -5,7 +5,7 @@ set(BOOST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/boost_1_64_0)
 
 if(MSVC)
   if(CMAKE_CL_64)
-    set(OpenCV_ARCH x64)
+    set(Boost_ARCH x64)
   elseif((CMAKE_GENERATOR MATCHES "ARM") OR ("${arch_hint}" STREQUAL "ARM") OR (CMAKE_VS_EFFECTIVE_PLATFORMS MATCHES "ARM|arm"))
     # see Modules/CmakeGenericSystem.cmake
     set(Boost_ARCH ARM)
