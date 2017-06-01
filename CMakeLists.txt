@@ -44,9 +44,8 @@ endif()
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # setting for install
-set(INSTALL_LIB_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/../build/${ARCH_TYPE}/${RUNTIME}/lib )
+set(INSTALL_LIB_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/boost_libs/${ARCH_TYPE}/${RUNTIME} )
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-
 
 include_directories(${BOOST_DIR})
 
@@ -65,9 +64,31 @@ add_subdirectory(listsfiles/random)
 add_subdirectory(listsfiles/regex)
 add_subdirectory(listsfiles/timer)
 add_subdirectory(listsfiles/serialization)
+add_subdirectory(listsfiles/graph)
+
+find_package(MPI)
+if( MPI_FOUND )
+	message(STATUS "MPI found in ${MPI_INCLUDE_PATH}" )
+	# add_subdirectory(listsfiles/mpi)
+	# add_subdirectory(listsfiles/graph_parallel)
+endif()
+
+add_subdirectory(listsfiles/iostreams)
+add_subdirectory(listsfiles/locale)
+add_subdirectory(listsfiles/program_options)
+add_subdirectory(listsfiles/signals)
+add_subdirectory(listsfiles/type_erasure)
+add_subdirectory(listsfiles/wave)
+# add_subdirectory(listsfiles/python)
+# add_subdirectory(listsfiles/coroutine)
+# add_subdirectory(listsfiles/context)
+# add_subdirectory(listsfiles/fiber)
+# add_subdirectory(listsfiles/log)
+
 
 # export(TARGETS 
-	 # boost_atomic
+	 # boost_test
+	 # boost_atomic	 
 	 # boost_chrono
 	 # boost_container
 	 # boost_date_time
@@ -87,4 +108,6 @@ add_subdirectory(listsfiles/serialization)
 	 # boost_thread
 	 # boost_timer
 	 # boost_wserialization
+	 # boost_graph
+	 # boost_graph_parallel
 	 # FILE "${PROJECT_BINARY_DIR}/BoostTargets.cmake")
