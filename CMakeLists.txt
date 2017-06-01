@@ -32,7 +32,7 @@ elseif()
 endif()
 
 set(BOOST_VERSION 1.6.4)
-set(BOOST_DEF BOOST_ALL_NO_LIB BOOST_THREAD_BUILD_LIB BOOST_PYTHON_STATIC_LIB )
+set(BOOST_DEF BOOST_ALL_NO_LIB BOOST_THREAD_BUILD_LIB )
 if(NOT CMAKE_DEBUG_POSTFIX)
   set(CMAKE_DEBUG_POSTFIX d)
 endif()
@@ -79,12 +79,17 @@ add_subdirectory(listsfiles/program_options)
 add_subdirectory(listsfiles/signals)
 add_subdirectory(listsfiles/type_erasure)
 add_subdirectory(listsfiles/wave)
-# add_subdirectory(listsfiles/python)
-# add_subdirectory(listsfiles/coroutine)
-# add_subdirectory(listsfiles/context)
-# add_subdirectory(listsfiles/fiber)
-# add_subdirectory(listsfiles/log)
 
+find_package(PythonLibs)
+if( PythonLibs_FOUND )
+	message(STATUS "PythonLibs found in ${PYTHON_INCLUDE_DIRS}" )
+	add_subdirectory(listsfiles/python)
+endif()
+
+# add_subdirectory(listsfiles/log)
+# add_subdirectory(listsfiles/context)
+# add_subdirectory(listsfiles/coroutine)
+# add_subdirectory(listsfiles/fiber)
 
 # export(TARGETS 
 	 # boost_test
