@@ -46,7 +46,7 @@ if( PythonLibs_FOUND )
 		execute_process( COMMAND "${PYTHON_EXECUTABLE}" -c
 		"from __future__ import print_function\ntry: import numpy; print(numpy.get_include(), end='')\nexcept:pass\n"
 		OUTPUT_VARIABLE __numpy_path)	  
-		message(__numpy_path=${__numpy_path})
+		message(STATUS "Numpy_path=${__numpy_path}")
 	elseif(__numpy_out)
 	  message(STATUS "Python executable not found.")
 	endif(PYTHON_EXECUTABLE)
@@ -54,4 +54,4 @@ if( PythonLibs_FOUND )
 endif()
  
 include(${Boost_CONFIG_PATH}/BoostTargets.cmake)
-message(STATUS "boost Found in ${Boost_LIBRARY_DIRS}")
+message(STATUS "Boost Found in ${Boost_LIBRARY_DIRS}")
