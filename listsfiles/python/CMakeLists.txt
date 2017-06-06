@@ -61,8 +61,8 @@ add_library(boost_python
 target_include_directories(boost_python PUBLIC ${PYTHON_INCLUDE_DIRS} ${PYTHON_NUMPY_INCLUDE_DIR} )
 target_compile_definitions( boost_python  PUBLIC ${BOOST_DEF} BOOST_PYTHON_STATIC_LIB BOOST_NUMPY_SOURCE )
 target_link_libraries(boost_python PUBLIC
-  boost::serialization
-  boost::graph
+  boost_serialization
+  boost_graph
   ${PYTHON_LIBRARIES}
   )
 install(TARGETS boost_python DESTINATION ${INSTALL_LIB_DIRS} ) 

@@ -439,7 +439,7 @@ if( PythonLibs_FOUND )
 	set_property(TARGET boost_python APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 	set_target_properties(boost_python PROPERTIES
 	  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-	  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost::serialization;boost::graph;${PYTHON_LIBRARIES}"
+	  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "boost_serialization;boost_graph;${PYTHON_LIBRARIES}"
 	  IMPORTED_LOCATION_DEBUG "${Boost_LIBRARY_DIRS}/boost_pythond.lib"
 	  )
 endif()
@@ -648,7 +648,7 @@ if( PythonLibs_FOUND )
 	set_property(TARGET boost_python APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 	set_target_properties(boost_python PROPERTIES
 	  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-	  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost::serialization;boost::graph;${PYTHON_LIBRARIES}"
+	  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "boost_serialization;boost_graph;${PYTHON_LIBRARIES}"
 	  IMPORTED_LOCATION_RELEASE "${Boost_LIBRARY_DIRS}/boost_python.lib"
 	  )
 endif()
