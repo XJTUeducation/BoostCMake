@@ -3,7 +3,7 @@ mkdir buildx64
 cd buildx64
 mkdir vc14
 cd vc14
-cmake -G "Visual Studio 15 2017 Win64" -T v140 ../..
+cmake -G "Visual Studio 14 2015 Win64" ../..
 
 cd ../..
 
@@ -11,7 +11,7 @@ mkdir buildx86
 cd buildx86
 mkdir vc14
 cd vc14
-cmake -G "Visual Studio 15 2017" -T v140 ../..
+cmake -G "Visual Studio 14 2015" ../..
 
 cd ../..
 
