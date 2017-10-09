@@ -47,7 +47,7 @@ if( PythonLibs_FOUND )
 		"from __future__ import print_function\ntry: import numpy; print(numpy.get_include(), end='')\nexcept:pass\n"
 		OUTPUT_VARIABLE __numpy_path)	  
 		message(STATUS "Numpy_path=${__numpy_path}")
-	elseif(__numpy_out)
+	else() #if(__numpy_out)
 	  message(STATUS "Python executable not found.")
 	endif(PYTHON_EXECUTABLE)
 	find_path(PYTHON_NUMPY_INCLUDE_DIR numpy/arrayobject.h HINTS "${__numpy_path}" "${PYTHON_INCLUDE_PATH}" NO_DEFAULT_PATH)
